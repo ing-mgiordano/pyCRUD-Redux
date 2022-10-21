@@ -1,10 +1,14 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 
 //Actions de Redux
 import { crearNuevoProducto } from '../actions/productoActions'
 
 const NuevoProducto = () => {
+
+    //redireccion
+    const navigate = useNavigate()
 
     //state del componenet
     const [nombre, setNombre] = useState('')
@@ -12,6 +16,11 @@ const NuevoProducto = () => {
 
     //utilizar useDispatch y te retorna una funcion
     const dispatch = useDispatch()
+
+    //acceder y leer el state del store
+    const cargando = useSelector(state => state.productos.loading)
+    const error = useSelector(state => state.productos.error)
+    /* console.log(cargando, error) */
 
     //llamar al action de productoAction
     const agregarProducto = producto => dispatch(crearNuevoProducto(producto))
@@ -31,6 +40,9 @@ const NuevoProducto = () => {
             nombre,
             precio
         })
+
+        //redireccion
+        navigate('/')
     }
 
   return (
@@ -47,7 +59,7 @@ const NuevoProducto = () => {
                     >
                         <div className='form-group'>
                             <label 
-                                for="nombre-producto"
+                                htmlFor="nombre-producto"
                             >Nombre Producto</label>
                             <input 
                                 type="text"
@@ -62,7 +74,7 @@ const NuevoProducto = () => {
 
                         <div className='form-group'>
                             <label 
-                                for="precio-producto"
+                                htmlFor="precio-producto"
                             >Precio Producto</label>
                             <input 
                                 type="number"
@@ -80,6 +92,9 @@ const NuevoProducto = () => {
                             className='btn btn-primary font-weight-bold text-uppercase d-block w-100'
                         >Agregar</button>
                     </form>
+
+                    { cargando ? <p>Cargando..</p> : null }
+                    { error ? <p  className='alert alert-danger p2 mt-4 text-center'>Hubo un error</p> : null }
                 </div>
             </div>
         </div>
