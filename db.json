@@ -54,6 +54,11 @@
       "nombre": "Pulpo",
       "precio": 34432,
       "id": 11
+    },
+    {
+      "nombre": "Fanta",
+      "precio": 21,
+      "id": 12
     }
   ]
 }
