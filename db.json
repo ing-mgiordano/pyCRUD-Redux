@@ -1,44 +1,14 @@
 {
   "productos": [
     {
-      "id": 1,
-      "nombre": "Jugo de Zanahoria",
-      "precio": "31111"
-    },
-    {
-      "id": 2,
-      "nombre": "Jugo de Naranja",
-      "precio": "1"
-    },
-    {
-      "nombre": "Jugo de Naranja",
-      "precio": "300",
-      "id": 3
-    },
-    {
-      "nombre": "Rib Eye 800g",
-      "precio": "200",
-      "id": 4
-    },
-    {
       "nombre": "Jugo de Fresa",
       "precio": "200",
       "id": 5
     },
     {
-      "nombre": "Carne Mechada",
-      "precio": 299,
-      "id": 6
-    },
-    {
       "nombre": "Pepsi",
       "precio": 25,
       "id": 7
-    },
-    {
-      "nombre": "Jugo de Calamar",
-      "precio": 3900,
-      "id": 8
     },
     {
       "nombre": "Tiramisu",
@@ -49,11 +19,6 @@
       "nombre": "Fernet",
       "precio": 123,
       "id": 10
-    },
-    {
-      "nombre": "Pulpo",
-      "precio": 34432,
-      "id": 11
     },
     {
       "nombre": "Fanta",

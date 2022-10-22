@@ -12,7 +12,7 @@ const EditarProducto = () => {
 
                     <form>
                         <div className='form-group'>
-                            <label for="nombre-producto">Nombre Producto</label>
+                            <label htmlFor="nombre-producto">Nombre Producto</label>
                             <input 
                                 type="text"
                                 id='nombre-producto'
@@ -23,7 +23,7 @@ const EditarProducto = () => {
                         </div>
 
                         <div className='form-group'>
-                            <label for="precio-producto">Precio Producto</label>
+                            <label htmlFor="precio-producto">Precio Producto</label>
                             <input 
                                 type="number"
                                 id='precio-producto'
