@@ -24,6 +24,16 @@
       "nombre": "Pollo",
       "precio": 190,
       "id": 14
+    },
+    {
+      "nombre": "kinder",
+      "precio": 23,
+      "id": 15
+    },
+    {
+      "nombre": "Vino",
+      "precio": 12,
+      "id": 16
     }
   ]
 }

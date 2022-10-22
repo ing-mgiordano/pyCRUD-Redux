@@ -1,4 +1,4 @@
-import React, { Fragment, useDebugValue, useEffect } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import Producto from './Producto'
 
 //Redux
@@ -13,6 +13,7 @@ const Productos = () => {
         //consular API
         const cargarProductos = () => dispatch(obtenerProductos())
         cargarProductos()
+        // eslint-disable-next-line
     }, [])
 
     //obtener el state
