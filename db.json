@@ -1,8 +1,8 @@
 {
   "productos": [
     {
-      "nombre": "Jugo de Fresa",
-      "precio": "200",
+      "nombre": "Jugo de Pepas",
+      "precio": "20",
       "id": 5
     },
     {
@@ -12,18 +12,18 @@
     },
     {
       "nombre": "Tiramisu",
-      "precio": 232,
+      "precio": "2328",
       "id": 9
     },
     {
       "nombre": "Fernet",
-      "precio": 123,
+      "precio": "1231",
       "id": 10
     },
     {
-      "nombre": "Fanta",
-      "precio": 21,
-      "id": 12
+      "nombre": "Pollo",
+      "precio": 190,
+      "id": 14
     }
   ]
 }
